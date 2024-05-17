@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.CustomerSide.CusProfileFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/cusProfile_Pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/my_light_primary"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/person_icon" />
+
+    <EditText
+        android:id="@+id/cusProfile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint=" username"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <EditText
+        android:id="@+id/cusProfile_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint=" password"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/cusProfile_phNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint=" Phone number"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/cusProfile_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint=" Address"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/cusProfile_updateProfile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="updateProfile"
+        android:text="@string/updateButton"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/cusProfile_logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="logoutUser"
+        android:text="@string/logoutText"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/cusProfile_progressBar"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/my_light_primary"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

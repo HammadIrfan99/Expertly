@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    tools:context=".Activity.CustomerSide.CusProfessionalProfile"
+    android:backgroundTintMode="@color/my_light_primary"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/cus_Prof_Profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_light_primary"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/cus_Prof_Profile_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/cus_Prof_Profile_backButton"
+            android:layout_marginStart="12dp"
+            android:text="Professional"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/cus_Prof_Profile_Data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cus_Prof_Profile_toolbar"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!-- Your profile data content -->
+
+        <ImageView
+
+            android:id="@+id/cus_Prof_Profile_Pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circular_background"
+            android:backgroundTint="@color/my_light_primary"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_icon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/cusProf_profile_txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_alignBaseline="@id/cus_Prof_Profile_username"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/cus_Prof_Profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint=" username"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cus_Prof_Profile_Pic"
+            android:inputType="text"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/cusProf_profile_txtphNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone # : "
+            android:layout_alignBaseline="@id/cus_Prof_Profile_PhNo"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cus_Prof_Profile_PhNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cus_Prof_Profile_username"
+            android:hint=" Phone number"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+
+
+        <TextView
+            android:id="@+id/cusProf_profile_txtaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:layout_alignBaseline="@id/cus_Prof_Profile_address"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cus_Prof_Profile_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint=" Address"
+            android:layout_below="@+id/cus_Prof_Profile_PhNo"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/cusProf_profile_txtskill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skill: "
+            android:layout_alignBaseline="@id/cus_Prof_Profile_skill"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cus_Prof_Profile_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cus_Prof_Profile_address"
+            android:hint=" skill"
+            android:inputType="text"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/cusProf_profile_txtrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: "
+            android:layout_alignBaseline="@id/cus_Prof_Profile_rating"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cus_Prof_Profile_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cus_Prof_Profile_skill"
+            android:hint=" reting"
+            android:inputType="text"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/cusProf_profile_txtbooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookings: "
+            android:layout_alignBaseline="@id/cus_Prof_Profile_booking"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cus_Prof_Profile_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cus_Prof_Profile_rating"
+            android:hint=" bookings"
+            android:inputType="text"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <Button
+            android:id="@+id/cusProf_Profile_ChatButton"
+            android:layout_width="119dp"
+            android:layout_height="41dp"
+            android:layout_below="@id/cus_Prof_Profile_booking"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="201dp"
+            android:onClick="openChat"
+            android:text="Chat"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/cusProf_Profile_BookButton"
+            android:layout_width="118dp"
+            android:layout_height="39dp"
+            android:layout_below="@id/cus_Prof_Profile_booking"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="222dp"
+            android:layout_marginBottom="201dp"
+            android:onClick="bookProfessional"
+            android:text="Book Now"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

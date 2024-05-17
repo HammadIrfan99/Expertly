@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignIn_SignUp.ProfileCreationActivity">
+
+    <EditText
+        android:id="@+id/profile_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="200dp"
+        android:ems="10"
+        android:hint=" Address"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_phNo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_phNo"
+        app:layout_constraintTop_toBottomOf="@+id/profile_phNo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/profile_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Creation"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <EditText
+        android:id="@+id/profile_FName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint=" First Name"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_textView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/profile_textView"
+        app:layout_constraintTop_toBottomOf="@+id/profile_textView" />
+
+    <EditText
+        android:id="@+id/profile_LName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint=" Last Name"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_FName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_FName"
+        app:layout_constraintTop_toBottomOf="@+id/profile_FName" />
+
+    <EditText
+        android:id="@+id/profile_phNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint=" Phone number"
+        android:inputType="text"
+        android:background="@drawable/edit_text_drawable_rounded"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_LName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_LName"
+        app:layout_constraintTop_toBottomOf="@+id/profile_LName" />
+
+    <ProgressBar
+        android:id="@+id/profile_progressBar"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="250dp"
+        android:indeterminateTint="@color/my_light_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Address"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Address" />
+</androidx.constraintlayout.widget.ConstraintLayout>

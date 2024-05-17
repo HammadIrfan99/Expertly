@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profHomePgMenu_professional"
+        android:icon="@drawable/list_icon"
+        android:title="Customers" />
+
+    <item
+        android:id="@+id/profHomePgMenu_notifications"
+        android:icon="@drawable/notifications_icon"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/profHomePgMenu_profile"
+        android:icon="@drawable/person_icon"
+        android:title="Profile" />
+
+</menu>

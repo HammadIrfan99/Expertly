@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "86632171494",
+    "project_id": "labour-hub-834f7",
+    "storage_bucket": "labour-hub-834f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86632171494:android:249293b8cc1df2c54d3827",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFYRP2w4kUU7MRaAQ8Zd8oFUiNeVEL1m4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
