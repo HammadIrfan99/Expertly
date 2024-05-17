@@ -23,7 +23,7 @@
             android:name=".Activity.ProfessionalSide.ProfCustomerProfile"
             android:exported="false" />
         <activity
-            android:name=".Adapter.ProfessionalSide.ProfNotificationAdapter"
+            android:name=".Adapter.ProfessionalSide.BugProfNotificationAdapter"
             android:exported="false" />
         <activity
             android:name=".Fragment.ProfessionalSide.ProfNotificationAdapter"

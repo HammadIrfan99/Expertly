@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.Adapter.ProfessionalSide.ProfNotificationAdapter;
 import com.example.myapplication.Model.Notification;
-import com.example.myapplication.R;
 import com.example.myapplication.R;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
