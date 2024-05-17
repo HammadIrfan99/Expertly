@@ -23,12 +23,6 @@
             android:name=".Activity.ProfessionalSide.ProfCustomerProfile"
             android:exported="false" />
         <activity
-            android:name=".Adapter.ProfessionalSide.BugProfNotificationAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".Fragment.ProfessionalSide.ProfNotificationAdapter"
-            android:exported="false" />
-        <activity
             android:name=".Activity.CustomerSide.CusChat"
             android:exported="false" />
         <activity
@@ -44,10 +38,16 @@
             android:name=".Activity.CustomerSide.CustomerHomePg_Search"
             android:exported="false" />
         <activity
-            android:name=".Activity.CustomerProfile"
+            android:name=".Activity.CustomerSide.CustomerHomepageActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.SignIn_SignUp.ProfileCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignIn_SignUp.Signup_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignIn_SignUp.Signin_Activity"
             android:exported="false" />
         <activity
             android:name=".Activity.SignIn_SignUp.MainActivity"
@@ -58,15 +58,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activity.CustomerSide.CustomerHomepageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.SignIn_SignUp.Signup_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.SignIn_SignUp.Signin_Activity"
-            android:exported="false" />
     </application>
 
 </manifest>
